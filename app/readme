@@ -1,0 +1,28 @@
+### file app ###
+
+in this file there are the files that manage database , and Core folder that mange route and direct
+browser to page and Controllers folder in this folder to display web page we have html and php file 
+html mange ui and php call data or send or recive data to make the order the file in goood way we need to 
+seprate every part, to can detect error, in controll files will manage the php part of web page 
+
+index.php this file manage all project file and make connection between them and call every file in right time 
+
+
+composer.json file
+//we need to link files togther to use require and write the place and name of the files we need
+//composer can do this for us we need to write this code
+// "autoload": {
+          "classmap": [
+              "app/"
+          ],
+          "files": [
+              "app/helpers.php"
+          ]
+  how the code above work in fact this classmap mean link this class togther, and files mean this files contain no class
+  so don't add it like all other files
+
+  after write this code
+  we will type in terminal "dump-autoload" and we will find files in vendor/composer/we will find autoload_files where
+  the composer make the process of linking file togther automaticaly
+  you can look at autoload_classmap.php file you will know how it acctualy work and that will be useful
+
